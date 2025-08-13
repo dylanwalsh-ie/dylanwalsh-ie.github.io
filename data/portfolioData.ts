@@ -1,4 +1,3 @@
-
 import { Skill, Article, Project, EducationEntry } from '../types';
 
 export const skills: Skill[] = [
@@ -27,12 +26,12 @@ export const articles: Article[] = [
     {
         title: "Workstation unable to access network or internet",
         summary: "A step-by-step guide to troubleshooting and resolving a network connectivity issue on a Windows workstation, involving checking physical cables and configuring static IP addresses.",
-        pdfUrl: "/assets/pdf/workstation-network-troubleshooting.pdf"
+        pdfUrl: "./assets/pdf/workstation-network-troubleshooting.pdf"
     },
     {
         title: "System frequently shutting down unexpectedly",
         summary: "A guide to diagnosing and replacing a faulty Power Supply Unit (PSU) in a desktop computer that causes unexpected shutdowns, especially under load.",
-        pdfUrl: "/assets/pdf/system-shutdown-troubleshooting.pdf"
+        pdfUrl: "./assets/pdf/system-shutdown-troubleshooting.pdf"
     }
 ];
 
@@ -121,7 +120,7 @@ export const education: EducationEntry[] = [
         institution: "ICDL Foundation",
         date: "Completed 2024",
         verificationUrl: "#",
-        badgeImage: "/icdl-databases.png"
+        badgeImage: "./icdl-databases.png"
     },
     {
         credential_type: "Certificate",
@@ -129,7 +128,7 @@ export const education: EducationEntry[] = [
         institution: "ICDL Foundation",
         date: "Completed 2024",
         verificationUrl: "#",
-        badgeImage: "/icdl-computer-essentials.png"
+        badgeImage: "./icdl-computer-essentials.png"
     },
     {
         credential_type: "Certificate",
