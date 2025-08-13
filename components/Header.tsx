@@ -7,7 +7,7 @@ interface HeaderProps {
     toggleDarkMode: () => void;
 }
 
-export const Header = ({ isDarkMode, toggleDarkMode }: HeaderProps) => {
+export const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
     const [isScrolled, setIsScrolled] = React.useState(false);
 
     React.useEffect(() => {

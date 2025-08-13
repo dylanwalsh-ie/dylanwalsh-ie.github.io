@@ -1,5 +1,3 @@
-
-
 import { Section } from './Section.tsx';
 import { skills } from '../data/portfolioData.ts';
 import { Skill } from '../types.ts';
@@ -19,7 +17,7 @@ const SkillCategory: React.FC<{ category: string, skills: Skill[] }> = ({ catego
     </div>
 );
 
-export const About = () => {
+export const About: React.FC = () => {
     const skillCategories = Array.from(new Set(skills.map(s => s.category)));
 
     return (

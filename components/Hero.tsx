@@ -9,7 +9,7 @@ const subHeadlines = [
     "Tech Enthusiast"
 ];
 
-export const Hero = () => {
+export const Hero: React.FC = () => {
     const [index, setIndex] = React.useState(0);
     const [subIndex, setSubIndex] = React.useState(0);
     const [isDeleting, setIsDeleting] = React.useState(false);

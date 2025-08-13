@@ -1,5 +1,3 @@
-
-
 import { Section } from './Section.tsx';
 import { articles } from '../data/portfolioData.ts';
 import { Article } from '../types.ts';

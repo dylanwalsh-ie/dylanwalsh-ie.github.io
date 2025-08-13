@@ -18,7 +18,7 @@ interface FormInputProps {
     rows?: number;
 }
 
-const FormInput = ({ id, name, type = 'text', placeholder, value, onChange, required, icon: Icon, rows }: FormInputProps) => {
+const FormInput: React.FC<FormInputProps> = ({ id, name, type = 'text', placeholder, value, onChange, required, icon: Icon, rows }) => {
     const commonProps = {
         id,
         name,
@@ -43,7 +43,7 @@ const FormInput = ({ id, name, type = 'text', placeholder, value, onChange, requ
 };
 
 
-export const Contact = () => {
+export const Contact: React.FC = () => {
     const [formData, setFormData] = React.useState({ name: '', email: '', message: '' });
     const [status, setStatus] = React.useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
     const [responseMessage, setResponseMessage] = React.useState('');

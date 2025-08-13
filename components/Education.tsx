@@ -1,5 +1,3 @@
-
-
 import { Section } from './Section.tsx';
 import { education } from '../data/portfolioData.ts';
 import { EducationEntry } from '../types.ts';
@@ -71,7 +69,7 @@ const EducationCard: React.FC<{ entry: EducationEntry }> = ({ entry }) => {
 };
 
 
-export const Education = () => {
+export const Education: React.FC = () => {
     return (
         <Section id="education">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
