@@ -1,5 +1,3 @@
-
-
 export const AtSymbolIcon = ({ className }: { className?: string }) => (
     <svg 
         xmlns="http://www.w3.org/2000/svg" 
