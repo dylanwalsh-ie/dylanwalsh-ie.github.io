@@ -28,13 +28,15 @@ export function renderKnowledge() {
 }
 
 export function attachKnowledgeListeners() {
-    document.querySelectorAll('.read-more-btn').forEach(button => {
-        button.addEventListener('click', (e) => {
-            const articleId = e.currentTarget.dataset.articleId;
+    const knowledgeSection = document.getElementById('knowledge');
+    knowledgeSection?.addEventListener('click', (e) => {
+        const readMoreBtn = e.target.closest('.read-more-btn');
+        if (readMoreBtn) {
+            const articleId = readMoreBtn.dataset.articleId;
             const article = articles.find(a => a.id === articleId);
             if (article) {
                 showModal(article.title, article.pdfUrl);
             }
-        });
+        }
     });
 }

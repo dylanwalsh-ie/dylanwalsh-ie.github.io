@@ -1,4 +1,4 @@
-import { App } from './App.js';
+import { renderAppContent, renderFooterAndModal } from './App.js';
 import { attachHeaderListeners } from './components/Header.js';
 import { attachHeroListeners } from './components/Hero.js';
 import { attachKnowledgeListeners } from './components/Knowledge.js';
@@ -7,14 +7,22 @@ import { attachContactListeners } from './components/Contact.js';
 import { initializeScrollAnimations } from './utils/animations.js';
 
 function main() {
-    const root = document.getElementById('root');
-    if (!root) {
-        console.error("Root element not found");
+    const mainContent = document.getElementById('main-content');
+    const footerContainer = document.getElementById('footer-container');
+    const modalPlaceholder = document.getElementById('modal-placeholder');
+    
+    if (!mainContent || !footerContainer || !modalPlaceholder) {
+        console.error("Critical layout elements not found");
         return;
     }
 
-    // Render the entire app's HTML
-    root.innerHTML = App();
+    // Render content below the fold
+    mainContent.innerHTML = renderAppContent();
+
+    // Render footer and modal placeholder, which live outside the main flow
+    const { footer, modal } = renderFooterAndModal();
+    footerContainer.innerHTML = footer;
+    modalPlaceholder.innerHTML = modal;
 
     // After rendering, attach all event listeners
     attachHeaderListeners();
@@ -23,7 +31,7 @@ function main() {
     attachProjectListeners();
     attachContactListeners();
 
-    // Initialize global animations
+    // Initialize global animations for dynamically added content
     initializeScrollAnimations();
 }
 

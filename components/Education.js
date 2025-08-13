@@ -37,7 +37,7 @@ const EducationCard = (entry) => {
                     <a href="${entry.verificationUrl}" target="_blank" rel="noopener noreferrer" class="my-4 block mx-auto w-fit group" aria-label="View credential for ${entry.title}">
                         <div class="transition-transform duration-300 group-hover:scale-110">
                             ${entry.isBadgeEmbed ? GoogleBadge() : ''}
-                            ${entry.badgeImage ? `<img src="${entry.badgeImage}" alt="${entry.title} badge" class="w-32 h-32 object-contain rounded-lg" />` : ''}
+                            ${entry.badgeImage ? `<img src="${entry.badgeImage}" alt="${entry.title} badge" class="w-32 h-32 object-contain rounded-lg" loading="lazy" width="128" height="128" />` : ''}
                         </div>
                     </a>
                 ` : ''}

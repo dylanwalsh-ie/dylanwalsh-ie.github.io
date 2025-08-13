@@ -1,4 +1,4 @@
-import { renderTerminal, attachTerminalListeners as attachSingleTerminalListener } from './Terminal.js';
+import { renderTerminal } from './Terminal.js';
 import { GithubIcon } from './icons/GithubIcon.js';
 import { ExternalLinkIcon } from './icons/ExternalLinkIcon.js';
 
@@ -20,7 +20,7 @@ const ProjectRunner = (project) => {
         case 'meta':
              return `
                  <div class="w-full h-full bg-gray-800 rounded-lg overflow-hidden shadow-inner flex items-center justify-center p-4">
-                     <img src="${project.image}" alt="${project.title}" class="w-full h-full object-cover rounded-md" />
+                     <img src="${project.image}" alt="${project.title}" class="w-full h-full object-cover rounded-md" loading="lazy" width="800" height="600" />
                  </div>
              `;
         default:
@@ -67,10 +67,3 @@ export function renderProjectShowcase(project, index) {
         </div>
     `;
 };
-
-export function attachTerminalListeners() {
-    document.querySelectorAll('.terminal-container').forEach(terminalEl => {
-        const terminalId = terminalEl.id;
-        attachSingleTerminalListener(terminalId);
-    });
-}

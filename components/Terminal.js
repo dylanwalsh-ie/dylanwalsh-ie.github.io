@@ -1,5 +1,3 @@
-import { projects } from '../data/portfolioData.js';
-
 // Converts a project title to a safe DOM ID
 function toDomId(title) {
     return `terminal-${title.toLowerCase().replace(/\s+/g, '-')}`;
@@ -33,51 +31,4 @@ export function renderTerminal(title, scriptDetails) {
             </div>
         </div>
     `;
-}
-
-export function attachTerminalListeners(terminalId) {
-    const terminalEl = document.getElementById(terminalId);
-    if (!terminalEl) return;
-
-    const runBtn = terminalEl.querySelector('.run-script-btn');
-    const outputContainer = terminalEl.querySelector('.output-content');
-    const terminalOutputScreen = terminalEl.querySelector('.terminal-output');
-    const projectTitle = terminalEl.dataset.projectTitle;
-    const project = projects.find(p => p.title === projectTitle);
-    
-    if (!runBtn || !outputContainer || !project || !project.scriptDetails) return;
-
-    let isRunning = false;
-
-    runBtn.addEventListener('click', () => {
-        if (isRunning) return;
-        isRunning = true;
-        
-        runBtn.disabled = true;
-        runBtn.textContent = 'Executing...';
-        outputContainer.innerHTML = '<div class="text-yellow-400">Running script...</div>';
-        outputContainer.style.display = 'block';
-
-        const outputLines = project.scriptDetails.output;
-        let i = 0;
-        
-        setTimeout(() => {
-            outputContainer.innerHTML = ''; // Clear "Running script..."
-            const intervalId = setInterval(() => {
-                if (i < outputLines.length) {
-                    const p = document.createElement('p');
-                    p.className = 'text-gray-300';
-                    p.innerHTML = `<span class="text-green-400 mr-2">&gt;</span>${outputLines[i]}`;
-                    outputContainer.appendChild(p);
-                    terminalOutputScreen.scrollTop = terminalOutputScreen.scrollHeight;
-                    i++;
-                } else {
-                    clearInterval(intervalId);
-                    isRunning = false;
-                    runBtn.disabled = false;
-                    runBtn.textContent = 'Run Script';
-                }
-            }, 300);
-        }, 500);
-    });
 }
