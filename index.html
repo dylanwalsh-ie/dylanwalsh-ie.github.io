@@ -49,8 +49,8 @@
 <body class="bg-[var(--bg-light)] text-[var(--text-light)] dark:bg-[var(--bg-dark)] dark:text-[var(--text-dark)] transition-colors duration-300">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!-- Change script type to text/babel for Babel to transpile it -->
-    <script type="text/babel" data-presets="react,typescript" src="./index.tsx"></script>
+    <!-- Change script type to text/babel and add data-type="module" for Babel to transpile it correctly -->
+    <script type="text/babel" data-type="module" data-presets="react,typescript" src="./index.tsx"></script>
 <script type="module" src="/index.tsx"></script>
 </body>
 </html>
