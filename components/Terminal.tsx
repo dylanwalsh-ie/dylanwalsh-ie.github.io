@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 
 interface TerminalProps {
     scriptDetails: {
@@ -8,11 +8,11 @@ interface TerminalProps {
 }
 
 export const Terminal: React.FC<TerminalProps> = ({ scriptDetails }) => {
-    const [isRunning, setIsRunning] = useState(false);
-    const [displayedOutput, setDisplayedOutput] = useState<string[]>([]);
-    const outputEndRef = useRef<HTMLDivElement>(null);
+    const [isRunning, setIsRunning] = React.useState(false);
+    const [displayedOutput, setDisplayedOutput] = React.useState<string[]>([]);
+    const outputEndRef = React.useRef<HTMLDivElement>(null);
 
-    useEffect(() => {
+    React.useEffect(() => {
         let timeoutId: number;
         let intervalId: number;
 
@@ -38,7 +38,7 @@ export const Terminal: React.FC<TerminalProps> = ({ scriptDetails }) => {
         };
     }, [isRunning, scriptDetails.output]);
 
-    useEffect(() => {
+    React.useEffect(() => {
         outputEndRef.current?.scrollIntoView({ behavior: 'smooth' });
     }, [displayedOutput]);
     

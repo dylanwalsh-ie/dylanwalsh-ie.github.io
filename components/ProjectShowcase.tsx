@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Project } from '../types.ts';
 import { Terminal } from './Terminal.tsx';
 import { GithubIcon } from './icons/GithubIcon.tsx';

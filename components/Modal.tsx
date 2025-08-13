@@ -1,16 +1,15 @@
-
-import React, { useEffect, ReactNode } from 'react';
+import React from 'react';
 
 interface ModalProps {
     isOpen: boolean;
     onClose: () => void;
     title: string;
     pdfUrl?: string;
-    children?: ReactNode;
+    children?: React.ReactNode;
 }
 
 export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, pdfUrl, children }) => {
-    useEffect(() => {
+    React.useEffect(() => {
         const handleEsc = (event: KeyboardEvent) => {
             if (event.key === 'Escape') {
                 onClose();

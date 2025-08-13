@@ -1,10 +1,9 @@
+import React from 'react';
 
-import { useState, useEffect, RefObject } from 'react';
+export const useOnScreen = <T extends Element>(ref: React.RefObject<T>, rootMargin: string = '0px'): boolean => {
+    const [isIntersecting, setIntersecting] = React.useState(false);
 
-export const useOnScreen = <T extends Element>(ref: RefObject<T>, rootMargin: string = '0px'): boolean => {
-    const [isIntersecting, setIntersecting] = useState(false);
-
-    useEffect(() => {
+    React.useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {

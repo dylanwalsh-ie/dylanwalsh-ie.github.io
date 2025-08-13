@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { MailIcon } from './icons/MailIcon.tsx';
 import { LinkedinIcon } from './icons/LinkedinIcon.tsx';
 import { GithubIcon } from './icons/GithubIcon.tsx';
@@ -10,12 +10,12 @@ const subHeadlines = [
 ];
 
 export const Hero = () => {
-    const [index, setIndex] = useState(0);
-    const [subIndex, setSubIndex] = useState(0);
-    const [isDeleting, setIsDeleting] = useState(false);
-    const [currentText, setCurrentText] = useState('');
+    const [index, setIndex] = React.useState(0);
+    const [subIndex, setSubIndex] = React.useState(0);
+    const [isDeleting, setIsDeleting] = React.useState(false);
+    const [currentText, setCurrentText] = React.useState('');
 
-    useEffect(() => {
+    React.useEffect(() => {
         if (isDeleting) {
             if (subIndex === 0) {
                 setIsDeleting(false);

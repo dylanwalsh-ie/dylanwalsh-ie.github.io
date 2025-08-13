@@ -1,6 +1,6 @@
 
 
-import React from 'react';
+
 import { Section } from './Section.tsx';
 import { projects } from '../data/portfolioData.ts';
 import { ProjectShowcase } from './ProjectShowcase.tsx';

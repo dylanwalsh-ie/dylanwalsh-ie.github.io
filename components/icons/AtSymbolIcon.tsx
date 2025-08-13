@@ -1,5 +1,4 @@
 
-import React from 'react';
 
 export const AtSymbolIcon = ({ className }: { className?: string }) => (
     <svg 

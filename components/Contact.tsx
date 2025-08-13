@@ -1,5 +1,4 @@
-
-import React, { useState } from 'react';
+import React from 'react';
 import { Section } from './Section.tsx';
 import { MailIcon } from './icons/MailIcon.tsx';
 import { LinkedinIcon } from './icons/LinkedinIcon.tsx';
@@ -45,9 +44,9 @@ const FormInput = ({ id, name, type = 'text', placeholder, value, onChange, requ
 
 
 export const Contact = () => {
-    const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-    const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
-    const [responseMessage, setResponseMessage] = useState('');
+    const [formData, setFormData] = React.useState({ name: '', email: '', message: '' });
+    const [status, setStatus] = React.useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+    const [responseMessage, setResponseMessage] = React.useState('');
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });

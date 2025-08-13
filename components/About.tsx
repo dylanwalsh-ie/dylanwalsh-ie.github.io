@@ -1,5 +1,5 @@
 
-import React from 'react';
+
 import { Section } from './Section.tsx';
 import { skills } from '../data/portfolioData.ts';
 import { Skill } from '../types.ts';

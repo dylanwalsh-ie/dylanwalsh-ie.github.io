@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { SunIcon } from './icons/SunIcon.tsx';
 import { MoonIcon } from './icons/MoonIcon.tsx';
 
@@ -8,9 +8,9 @@ interface HeaderProps {
 }
 
 export const Header = ({ isDarkMode, toggleDarkMode }: HeaderProps) => {
-    const [isScrolled, setIsScrolled] = useState(false);
+    const [isScrolled, setIsScrolled] = React.useState(false);
 
-    useEffect(() => {
+    React.useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 10);
         };

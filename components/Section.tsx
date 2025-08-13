@@ -1,15 +1,14 @@
-
-import React, { useRef, ReactNode } from 'react';
+import React from 'react';
 import { useOnScreen } from '../hooks/useOnScreen.ts';
 
 interface SectionProps {
     id: string;
-    children: ReactNode;
+    children: React.ReactNode;
     className?: string;
 }
 
 export const Section: React.FC<SectionProps> = ({ id, children, className = '' }) => {
-    const ref = useRef<HTMLDivElement>(null);
+    const ref = React.useRef<HTMLDivElement>(null);
     const isVisible = useOnScreen(ref, '-100px');
 
     return (

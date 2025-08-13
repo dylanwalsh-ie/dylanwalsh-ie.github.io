@@ -1,5 +1,5 @@
 
-import React from 'react';
+
 import { Section } from './Section.tsx';
 import { education } from '../data/portfolioData.ts';
 import { EducationEntry } from '../types.ts';

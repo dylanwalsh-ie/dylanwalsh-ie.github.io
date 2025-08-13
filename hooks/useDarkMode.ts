@@ -1,8 +1,7 @@
-
-import { useState, useEffect } from 'react';
+import React from 'react';
 
 export const useDarkMode = (): [boolean, () => void] => {
-    const [isDarkMode, setIsDarkMode] = useState(() => {
+    const [isDarkMode, setIsDarkMode] = React.useState(() => {
         if (typeof window !== 'undefined') {
             const storedPreference = localStorage.getItem('theme');
             if (storedPreference) {
@@ -13,7 +12,7 @@ export const useDarkMode = (): [boolean, () => void] => {
         return false;
     });
 
-    useEffect(() => {
+    React.useEffect(() => {
         const root = window.document.documentElement;
         if (isDarkMode) {
             root.classList.add('dark');

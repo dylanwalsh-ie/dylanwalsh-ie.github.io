@@ -1,5 +1,5 @@
 
-import React from 'react';
+
 import { MailIcon } from './icons/MailIcon.tsx';
 import { LinkedinIcon } from './icons/LinkedinIcon.tsx';
 import { GithubIcon } from './icons/GithubIcon.tsx';

@@ -1,5 +1,4 @@
 
-import React from 'react';
 
 export const PencilIcon = ({ className }: { className?: string }) => (
     <svg 

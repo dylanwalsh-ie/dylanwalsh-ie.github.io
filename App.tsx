@@ -1,5 +1,4 @@
-
-import React, { useState } from 'react';
+import React from 'react';
 import { Header } from './components/Header.tsx';
 import { Hero } from './components/Hero.tsx';
 import { About } from './components/About.tsx';
@@ -14,7 +13,7 @@ import { useDarkMode } from './hooks/useDarkMode.ts';
 
 function App() {
     const [isDarkMode, toggleDarkMode] = useDarkMode();
-    const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
+    const [selectedArticle, setSelectedArticle] = React.useState<Article | null>(null);
 
     const handleOpenArticle = (article: Article) => {
         setSelectedArticle(article);
