@@ -1,16 +1,16 @@
 
 import React, { useState } from 'react';
-import { Header } from './components/Header';
-import { Hero } from './components/Hero';
-import { About } from './components/About';
-import { Knowledge } from './components/Knowledge';
-import { Projects } from './components/Projects';
-import { Education } from './components/Education';
-import { Contact } from './components/Contact';
-import { Footer } from './components/Footer';
-import { Modal } from './components/Modal';
-import { Article } from './types';
-import { useDarkMode } from './hooks/useDarkMode';
+import { Header } from './components/Header.tsx';
+import { Hero } from './components/Hero.tsx';
+import { About } from './components/About.tsx';
+import { Knowledge } from './components/Knowledge.tsx';
+import { Projects } from './components/Projects.tsx';
+import { Education } from './components/Education.tsx';
+import { Contact } from './components/Contact.tsx';
+import { Footer } from './components/Footer.tsx';
+import { Modal } from './components/Modal.tsx';
+import { Article } from './types.ts';
+import { useDarkMode } from './hooks/useDarkMode.ts';
 
 function App() {
     const [isDarkMode, toggleDarkMode] = useDarkMode();

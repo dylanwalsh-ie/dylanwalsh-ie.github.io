@@ -1,8 +1,8 @@
 
 import React from 'react';
-import { MailIcon } from './icons/MailIcon';
-import { LinkedinIcon } from './icons/LinkedinIcon';
-import { GithubIcon } from './icons/GithubIcon';
+import { MailIcon } from './icons/MailIcon.tsx';
+import { LinkedinIcon } from './icons/LinkedinIcon.tsx';
+import { GithubIcon } from './icons/GithubIcon.tsx';
 
 export const Footer = () => {
     const currentYear = new Date().getFullYear();

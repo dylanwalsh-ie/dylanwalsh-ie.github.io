@@ -1,11 +1,11 @@
 
 import React, { useState } from 'react';
-import { Section } from './Section';
-import { MailIcon } from './icons/MailIcon';
-import { LinkedinIcon } from './icons/LinkedinIcon';
-import { UserIcon } from './icons/UserIcon';
-import { AtSymbolIcon } from './icons/AtSymbolIcon';
-import { PencilIcon } from './icons/PencilIcon';
+import { Section } from './Section.tsx';
+import { MailIcon } from './icons/MailIcon.tsx';
+import { LinkedinIcon } from './icons/LinkedinIcon.tsx';
+import { UserIcon } from './icons/UserIcon.tsx';
+import { AtSymbolIcon } from './icons/AtSymbolIcon.tsx';
+import { PencilIcon } from './icons/PencilIcon.tsx';
 
 interface FormInputProps {
     id: string;
@@ -107,7 +107,7 @@ export const Contact = () => {
                     <form onSubmit={handleSubmit} className="space-y-6">
                         <FormInput id="name" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} required icon={UserIcon} />
                         <FormInput id="email" name="email" type="email" placeholder="Your Email" value={formData.email} onChange={handleChange} required icon={AtSymbolIcon} />
-                        <FormInput id="message" name="message" type="textarea" placeholder="Your Message" value={formData.message} onChange={handleChange} required icon={PencilIcon} />
+                        <FormInput id="message" name="message" type="textarea" placeholder="Your Message" value={formData.message} onChange={handleChange} required icon={PencilIcon} rows={4} />
                         
                         <div>
                             <button

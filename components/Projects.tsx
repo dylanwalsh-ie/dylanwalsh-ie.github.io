@@ -1,9 +1,9 @@
 
 
 import React from 'react';
-import { Section } from './Section';
-import { projects } from '../data/portfolioData';
-import { ProjectShowcase } from './ProjectShowcase';
+import { Section } from './Section.tsx';
+import { projects } from '../data/portfolioData.ts';
+import { ProjectShowcase } from './ProjectShowcase.tsx';
 
 export const Projects = () => {
     return (

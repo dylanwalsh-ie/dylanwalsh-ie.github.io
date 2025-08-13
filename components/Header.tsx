@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { SunIcon } from './icons/SunIcon';
-import { MoonIcon } from './icons/MoonIcon';
+import { SunIcon } from './icons/SunIcon.tsx';
+import { MoonIcon } from './icons/MoonIcon.tsx';
 
 interface HeaderProps {
     isDarkMode: boolean;

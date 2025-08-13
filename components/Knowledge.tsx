@@ -1,8 +1,8 @@
 
 import React from 'react';
-import { Section } from './Section';
-import { articles } from '../data/portfolioData';
-import { Article } from '../types';
+import { Section } from './Section.tsx';
+import { articles } from '../data/portfolioData.ts';
+import { Article } from '../types.ts';
 
 interface ArticleCardProps {
     article: Article;

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Project } from '../types';
-import { Terminal } from './Terminal';
-import { GithubIcon } from './icons/GithubIcon';
-import { ExternalLinkIcon } from './icons/ExternalLinkIcon';
+import { Project } from '../types.ts';
+import { Terminal } from './Terminal.tsx';
+import { GithubIcon } from './icons/GithubIcon.tsx';
+import { ExternalLinkIcon } from './icons/ExternalLinkIcon.tsx';
 
 interface ProjectShowcaseProps {
     project: Project;

@@ -1,11 +1,11 @@
 
 import React from 'react';
-import { Section } from './Section';
-import { education } from '../data/portfolioData';
-import { EducationEntry } from '../types';
-import { MortarBoardIcon } from './icons/MortarBoardIcon';
-import { CertificateIcon } from './icons/CertificateIcon';
-import { ExternalLinkIcon } from './icons/ExternalLinkIcon';
+import { Section } from './Section.tsx';
+import { education } from '../data/portfolioData.ts';
+import { EducationEntry } from '../types.ts';
+import { MortarBoardIcon } from './icons/MortarBoardIcon.tsx';
+import { CertificateIcon } from './icons/CertificateIcon.tsx';
+import { ExternalLinkIcon } from './icons/ExternalLinkIcon.tsx';
 
 const GoogleBadge: React.FC<{ className?: string }> = ({ className = "w-32 h-32" }) => (
     <svg className={className} viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">

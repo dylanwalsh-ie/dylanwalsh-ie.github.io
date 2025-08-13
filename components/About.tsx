@@ -1,8 +1,8 @@
 
 import React from 'react';
-import { Section } from './Section';
-import { skills } from '../data/portfolioData';
-import { Skill } from '../types';
+import { Section } from './Section.tsx';
+import { skills } from '../data/portfolioData.ts';
+import { Skill } from '../types.ts';
 
 const SkillBadge: React.FC<{ name: string }> = ({ name }) => (
     <div className="bg-[#007BFF]/10 text-[#007BFF] dark:bg-[#007BFF]/20 dark:text-[#007BFF] text-sm font-medium px-3 py-1 rounded-full hover:bg-[#007BFF]/20 dark:hover:bg-[#007BFF]/30 transition-all cursor-default">

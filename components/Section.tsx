@@ -1,6 +1,6 @@
 
 import React, { useRef, ReactNode } from 'react';
-import { useOnScreen } from '../hooks/useOnScreen';
+import { useOnScreen } from '../hooks/useOnScreen.ts';
 
 interface SectionProps {
     id: string;

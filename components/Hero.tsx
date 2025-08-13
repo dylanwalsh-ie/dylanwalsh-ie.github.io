@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { MailIcon } from './icons/MailIcon';
-import { LinkedinIcon } from './icons/LinkedinIcon';
-import { GithubIcon } from './icons/GithubIcon';
+import { MailIcon } from './icons/MailIcon.tsx';
+import { LinkedinIcon } from './icons/LinkedinIcon.tsx';
+import { GithubIcon } from './icons/GithubIcon.tsx';
 
 const subHeadlines = [
     "Aspiring IT Support Specialist",
