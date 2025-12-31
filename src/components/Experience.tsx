@@ -41,18 +41,6 @@ const experienceData: ExperienceItemType[] = [
     transcriptUrl: "https://www.virtualbadge.io/certificate-validator?credential=df6eded3-2176-450a-b3bc-0b61e2e0e9a9"
   },
   {
-    role: "Database Administrator",
-    company: "CoLab ATU",
-    duration: "June 2023 - May 2024",
-    location: "Letterkenny, Donegal",
-    points: [
-      "Managed a PostgreSQL cluster with over 4,200 records, sustaining 99% uptime.",
-      "Performed daily backups and recovery for Microsoft SQL Server, reducing data loss by 25%.",
-      "Moved data into Snowflake using SQL queries and Python ETL processes.",
-      "Ensured proper access permissions and provided off-site support using TeamViewer."
-    ]
-  },
-  {
     role: "Data Analyst",
     company: "TELUS Digital AI Data Solutions",
     duration: "June 2024 - January 2025",
@@ -63,6 +51,18 @@ const experienceData: ExperienceItemType[] = [
       "Utilised data annotation platforms and internal rating UIs to classify, tag and structure training data for ML pipelines",
       "Applied advanced search operators within online mapping software to verify geospatial data and evaluate result quality vs user intent",
       "Strictly adhered to project guidelines and QA standards while classifying and structuring datasets which included NLU segmentation"
+    ]
+  },
+  {
+    role: "Database Administrator",
+    company: "CoLab ATU",
+    duration: "June 2023 - May 2024",
+    location: "Letterkenny, Donegal",
+    points: [
+      "Managed a PostgreSQL cluster with over 4,200 records, sustaining 99% uptime.",
+      "Performed daily backups and recovery for Microsoft SQL Server, reducing data loss by 25%.",
+      "Moved data into Snowflake using SQL queries and Python ETL processes.",
+      "Ensured proper access permissions and provided off-site support using TeamViewer."
     ]
   },
   {
