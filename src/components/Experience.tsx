@@ -13,6 +13,19 @@ import { BinaryScrambleText } from './BinaryScrambleText';
 
 const experienceData: ExperienceItemType[] = [
   {
+    role: "GCX Risk Teammate",
+    company: "eBay",
+    duration: "October 2025 - Present",
+    location: "Remote, Ireland",
+    points: [
+      "As part of eBay's Global Customer Protection Operations, my role is on the front-line, safeguarding platform integrity by managing the end-to-end lifecycle of account-related security incidents, to proactive fraud mitigation.",
+      "Handling Identity & Access Management through multi-layered identity verification protocols to combat social engineering and ensure the highest standard of account security",
+      "Perform risk assessments and user-behavioural analysis to identify fraudulent patterns and suspicious activity to maintain platform integrity",
+      "Ensure strict compliance with international data privacy laws and consumer protection regulations to maintain platform governance",
+      "Empower customers to adopt best security practices to mitigate future account vulnerabilities"
+    ]
+  },
+  {
     role: "I.T. Support with Cybersecurity Bootcamp",
     company: "Generation UK & Ireland",
     duration: "June 2025 - August 2025",
@@ -37,6 +50,19 @@ const experienceData: ExperienceItemType[] = [
       "Performed daily backups and recovery for Microsoft SQL Server, reducing data loss by 25%.",
       "Moved data into Snowflake using SQL queries and Python ETL processes.",
       "Ensured proper access permissions and provided off-site support using TeamViewer."
+    ]
+  },
+  {
+    role: "Data Analyst",
+    company: "TELUS Digital AI Data Solutions",
+    duration: "June 2024 - January 2025",
+    location: "Remote",
+    points: [
+      "Enhanced ML models for large search engines and digital mapping applications",
+      "Performed high-stakes relevance rating and quality checks across geospatial data to refine models during post-training",
+      "Utilised data annotation platforms and internal rating UIs to classify, tag and structure training data for ML pipelines",
+      "Applied advanced search operators within online mapping software to verify geospatial data and evaluate result quality vs user intent",
+      "Strictly adhered to project guidelines and QA standards while classifying and structuring datasets which included NLU segmentation"
     ]
   },
   {
