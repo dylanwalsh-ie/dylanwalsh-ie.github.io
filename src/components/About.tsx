@@ -23,7 +23,7 @@ export const About: React.FC<AboutProps> = ({ startAnimation }) => {
           <BinaryScrambleText text="Dylan Walsh" start={startAnimation} as="span" speed={40} />
         </h1>
         <p className="mt-4 text-lg md:text-xl text-blue-400 tracking-wider font-mono">
-          <BinaryScrambleText text="Aspiring IT Support Specialist | Cybersecurity Enthusiast | Data Science Graduate" start={startAnimation} as="span" speed={20} />
+          <BinaryScrambleText text="IT Support Specialist | Cybersecurity Enthusiast | Data Science Graduate" start={startAnimation} as="span" speed={20} />
         </p>
         
         {/* Digital Badges Section */}
