@@ -64,7 +64,7 @@ const App: React.FC = () => {
                 <p className="text-gray-300 leading-relaxed">
                   <BinaryScrambleText
                     start={aboutVisible}
-                    text="I’m an aspiring IT Support specialist, having just got CompTIA A+ certified and recently graduated from an I.T. Support bootcamp. Experienced in database management and academic administration, I focus on clear communication, fast triage, and follow-up so users leave confident. I enjoy troubleshooting, documenting fixes, and using simple automations to save time for both users and teams."
+                    text="I’m a Customer Risk Analyst specialising in data-driven fraud detection, risk analytics, and platform security. With a background in Data Science (MSc) and Cybersecurity, I work at the intersection of analytics, investigation, and prevention to identify fraud patterns, reduce financial risk, and protect large-scale online platforms."
                     as="span"
                     speed={5}
                   />
